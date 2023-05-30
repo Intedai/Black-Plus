@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html overflow-hidden>
+   <head>
+      <!--For optimizations for all devices-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>How much until +</title>
+      <link rel="icon" href="src/assets/icon.png">
+      <!--Tailwind.css-->
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <!--Press start 2P font for the website, imported from google fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+      <style>
+        /* Set font for all the website*/
+         * {
+         font-family: 'Press Start 2P', cursive;
+         }
+
+         /* Dirt block background image*/
+         .dirt-bg {
+         background-image: url(src/assets/bg.png)
+         }
+
+         /* Cursor for the website*/
+         .cursor {
+         cursor: url(src/assets/cursor.png), auto;
+         }
+         .cursor-click {
+         cursor: url(src/assets/cursor-click.png), auto;
+         }
+         .cursor-search {
+         cursor: url(src/assets/cursor-search.png), auto;
+         }
+      </style>
+   </head>
+   <body class="cursor select-none m-0 p-0 h-screen flex flex-col overflow-hidden">
+      <header class="border-4 border-violet-950 shadow-md w-full">
+         <div class="bg-violet-950 border-4 border-purple-900 p-8 w-auto flex justify-center">
+            <p class="text-1xl text-white">To get the black plus you need to be atleast Hypixel Network level 250</p>
+         </div>
+      </header>
+
+      <div class="dirt-bg flex flex-col justify-center items-center h-screen">
+         <div class="border-4 border-violet-950 shadow-md">
+            <div class="bg-violet-950 border-4 border-purple-900 p-8 w-auto">
+               <p class="text-4xl text-white">How much until <span class="text-black">+</span>&ThinSpace;</p>
+               <div class="w-full bg-gray-200 border-green-600">
+                  <div id="progress" class="bg-color mt-3 border-4 mb-3 text-xs font-medium text-white text-center p-0.5 leading-none" style="width: 0%; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">0/79680000</div>
+               </div>
+               <div class="flex justify-center mt-2">
+                  <input class="cursor-search border-4 outline-none w-3/4" placeholder="Username">
+                  <button id="search-button" class="cursor-click truncate animate-bounce hover:animate-none  w-1/4 bg-green-500 active:bg-blue-500 border-4 border-green-600 active:border-blue-600 text-white ml-2">CHECK!</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Confetti Script-->
+      <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+      <!--Main script that runs everything-->
+      <script src="src/scripts/script.js"></script>
+
+      <footer class="border-4 border-violet-950 shadow-md w-full">
+         <div class="bg-violet-950 border-4 border-purple-900 p-8 w-auto flex justify-center">
+            <p class="text-1xl text-white">Made by Intedai, open source on <a class="animate-pulse cursor-click text-purple-500 hover:animate-none cursor-click" href="https://github.com/Intedai/Black-Plus">Github</a></p>
+         </div>
+      </footer>
+   </body>
+</html>
